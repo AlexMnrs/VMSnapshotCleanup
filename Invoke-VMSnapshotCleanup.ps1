@@ -290,7 +290,7 @@ try {
     else {
         # Modo Interactivo (Menú Principal)
         while ($true) {
-            $MainOption = Show-Menu -Items @("Resetear VM (Clonar Snapshot)", "Limpiar VMs Antiguas (_Trash_)") -Title "Menú Principal - VMware Toolbox"
+            $MainOption = Show-Menu -Items @("Resetear VM (Clonar Snapshot)", "Limpiar VMs Antiguas (_Trash_)") -Title "Menú Principal - VMSnapshotCleanup"
             
             if ($MainOption -match "Resetear") { 
                 Process-VMReset -InputPath $null

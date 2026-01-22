@@ -1,11 +1,10 @@
-# VMware Toolbox
+# VMSnapshotCleanup
 
-Colección de herramientas y scripts automatizados en PowerShell para la gestión eficiente de máquinas virtuales en VMware Workstation.
+Herramienta automatizada en PowerShell para la gestión eficiente de "resets" de máquinas virtuales en VMware Workstation.
 
-## 🚀 Funcionalidades
+## 🚀 Funcionalidad
 
-### Invoke-VMSnapshotCleanup.ps1
-Este script es la herramienta principal del toolbox. Permite automatizar el ciclo de vida de entornos de prueba mediante snapshots:
+Este proyecto contiene el script `Invoke-VMSnapshotCleanup.ps1`, diseñado para automatizar el ciclo de vida de entornos de prueba mediante clonado de snapshots:
 
 - **Reset a "Golden State"**: Clona una máquina virtual desde un snapshot específico (por defecto etiquetado como `(OK)`), permitiendo volver a un estado limpio en minutos.
 - **Gestión de Backups**: Antes de reemplazar la VM, realiza una copia de seguridad de la versión actual en una carpeta `_Trash_`.
@@ -21,11 +20,11 @@ Este script es la herramienta principal del toolbox. Permite automatizar el cicl
 
 1. Clona el repositorio:
    ```bash
-   git clone https://github.com/AlexMnrs/VMware-toolbox.git
+   git clone https://github.com/AlexMnrs/VMSnapshotCleanup.git
    ```
 2. Accede al directorio:
    ```bash
-   cd VMware-toolbox
+   cd VMSnapshotCleanup
    ```
 
 ## 📖 Uso
